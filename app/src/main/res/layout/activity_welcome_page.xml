@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".WelcomePage">
+
+    <ImageView
+        android:id="@+id/img_appIcon"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/app_icon" />
+
+    <TextView
+        android:id="@+id/txt_three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_appIcon"
+        android:paddingLeft="90dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Three"
+        android:textColor="@color/orange"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/txt_meals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_appIcon"
+        android:layout_toRightOf="@+id/txt_three"
+        android:paddingLeft="10dp"
+        android:fontFamily="@font/aclonica"
+        android:text="Meals"
+        android:textColor="@color/primaryfont"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/txt_foodDelivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_three"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="monospace"
+        android:paddingTop="5dp"
+        android:text="food Delivery"
+        android:textAllCaps="true"
+        android:textColor="@color/secondaryfont"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_textbelowlogo"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:textColor="@color/secondaryfont"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/txt_foodDelivery"
+        android:fontFamily="serif"
+        android:layout_centerHorizontal="true"
+        android:text="@string/txtbelowlogo"
+        android:textAlignment="center"
+        android:textSize="15sp" />
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/txt_textbelowlogo"
+        android:background="@drawable/round_text"
+        android:layout_centerHorizontal="true"
+        android:text="login"
+        android:textStyle="bold"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:text="create an account"
+        android:id="@+id/btn_createAccount"
+        android:layout_marginTop="17dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btn_login"
+        android:textColor="@color/orange"
+        android:textStyle="bold"
+        app:cornerRadius="50dp"
+        app:strokeColor="@color/orange"
+        app:strokeWidth="1dp"
+        android:layout_width="300dp"
+        android:backgroundTint="@color/white"
+        android:layout_height="60dp"/>
+
+
+</RelativeLayout>

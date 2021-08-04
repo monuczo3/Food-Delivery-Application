@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LoginPage">
+
+    <TextView
+        android:id="@+id/txt_login"
+        android:text="Login"
+        android:layout_centerHorizontal="true"
+        android:textSize="40sp"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:textColor="@color/primaryfont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/txt_addyourdetails"
+        android:text="Add your detais to log in"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txt_login"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/secondaryfont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/et_phoneno2"
+        android:maxLength="10"
+        android:background="@drawable/round_grey"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txt_addyourdetails"
+        android:layout_marginTop="50dp"
+        android:hint="Phone No."
+        android:paddingLeft="10dp"
+        android:drawableLeft="@drawable/ic_phoneno"
+        android:drawablePadding="10dp"
+        android:inputType="phone"
+        android:layout_width="300dp"
+        android:layout_height="50dp"/>
+
+    <EditText
+        android:id="@+id/et_password2"
+        android:maxLength="50"
+        android:background="@drawable/round_grey"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/et_phoneno2"
+        android:layout_marginTop="20dp"
+        android:hint="Password"
+        android:paddingLeft="10dp"
+        android:drawableLeft="@drawable/ic_password"
+        android:drawablePadding="10dp"
+        android:inputType="textPassword"
+        android:layout_width="300dp"
+        android:layout_height="50dp"/>
+
+    <Button
+        android:id="@+id/btn_login2"
+        android:background="@drawable/round_text"
+        android:layout_below="@id/et_password2"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="Login"
+        android:textStyle="bold"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txt_forgotPass"
+        android:text="Forgot your password?"
+        android:layout_below="@id/btn_login2"
+        android:paddingTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txt_donthaveAccount"
+        android:text="Don't have an Account?"
+        android:layout_below="@id/txt_forgotPass"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="90dp"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/txt_signup"
+        android:text="Sign Up"
+        android:layout_below="@id/txt_forgotPass"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/txt_donthaveAccount"
+        android:textStyle="bold"
+        android:textColor="@color/orange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

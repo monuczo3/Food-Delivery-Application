@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="10"
+        android:orientation="horizontal">
+        <View
+            android:layout_gravity="center_vertical"
+            android:background="@color/statusbarcolor"
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_weight="0.6"/>
+        <TextView
+            android:paddingLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:layout_weight="6.4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/dish_name_cartpage"
+            android:text="Dish_name"/>
+        <TextView
+            android:id="@+id/dish_price_cartPage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="Rs. 100"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
